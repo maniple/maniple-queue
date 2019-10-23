@@ -1,0 +1,14 @@
+composer.phar
+composer.lock
+/vendor/
+node_modules
+bower_components
+
+*.swp
+*.swo
+*~
+.idea
+
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini

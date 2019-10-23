@@ -1,0 +1,40 @@
+{
+    "name": "maniple/maniple-queue",
+    "description": "",
+    "type": "zend1-module",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "maniple/maniple": "*",
+        "xemlock/zend1-composer-installer": "^0.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.7 <6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "Bootstrap.php"
+        ],
+        "psr-0": {
+            "ManipleQueue_": "library/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/maniple/maniple"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/xemlock/zefram"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}": ["type:zend1-module"]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
